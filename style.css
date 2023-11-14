@@ -24,6 +24,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 2;
 }
 
 #nav-logo h1 {
@@ -31,10 +32,11 @@ nav {
 }
 
 #button {
+  cursor: pointer;
   display: none;
   font-size: 2rem;
   font-weight: bold;
-  color: rgb(140, 140, 247);
+  color: rgb(50, 50, 233);
 }
 
 #links {
@@ -73,9 +75,10 @@ nav {
   font-size: 2.8rem;
   margin-bottom: 2rem;
   font-weight: 800;
+  color: rgb(140, 140, 247);
 }
 
-.name{
+.name {
   color: rgb(50, 50, 233);
   font-weight: bold;
 }
@@ -101,19 +104,19 @@ nav {
   background-repeat: no-repeat;
 }
 
-#about_me{
+#about_me {
   background-color: rgb(140, 140, 247);
   padding: 3rem;
   color: white;
   margin-bottom: 8rem;
 }
 
-#about_me h1{
+#about_me h1 {
   text-align: center;
   font-size: 3rem;
 }
 
-#about_me_content{
+#about_me_content {
   display: flex;
   padding: 2rem 8rem;
   align-items: start;
@@ -121,25 +124,99 @@ nav {
   font-size: 1.2rem;
 }
 
-#my_skills{
+#my_skills {
   padding: 2rem;
 }
 
-#my_skills h1{
+#my_skills h1 {
   font-size: 2.6rem;
   color: rgb(50, 50, 233);
   text-align: center;
   margin-bottom: 2rem;
 }
 
+#my_skills p {
+  font-size: 1.8rem;
+  color: rgb(109, 109, 238);
+  margin: 2rem 0;
+  font-weight: 700;
+  margin: 2rem 6rem;
+}
 
+#skills {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 0 8rem;
+}
+
+#skills div {
+  margin: auto;
+  width: 14rem;
+  height: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.4s ease-in-out;
+}
+
+#skills div:hover{
+  transform: scale(1.2);
+}
+
+#skills div img{
+  width: 6rem;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+#skills div p{
+  color: rgb(140, 140, 247);
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+#hskills{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 6rem;
+}
+
+#hskills div{
+  padding: 0.6rem;
+  margin: 1rem 0;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  transition: 0.4s ease-in-out;
+  max-width: 300px;
+}
+
+#hskills div:hover{
+  transform: scale(1.1);
+}
+#hskills div h1{
+  font-size: 1.2rem;
+  text-align: start;
+  color: rgb(140, 140, 247);
+}
 
 @media all and (max-width: 1000px) {
   #links a {
     font-size: 1rem;
   }
 
-  #links{
+  #links {
     gap: 2rem;
   }
 
@@ -159,22 +236,88 @@ nav {
     padding: 4rem;
   }
 
-  #profile_img{
+  #profile_img {
     display: none;
   }
 
+  #about_me_content {
+    padding: 2rem 2rem;
+  }
+
+  #skills {
+    padding: 0 3rem;
+  }
 }
 
 @media all and (max-width: 700px) {
+  nav{
+    display: block;
+  }
+
+  #main{
+    padding: 1rem 4rem;
+  }
+
   #links {
-    display: none;
+    display: flex;
+    z-index: X;
+    position: absolute;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 2rem;
+    width: 100%;
+    left: 0;
+    overflow: hidden;
+    padding: 0 3rem 3rem;
+    animation: dropup 0.8s ease-in-out forwards;
+    background-color: white;
   }
 
   #button {
     display: block;
   }
 
-  #about_me h1{
+  #about_me h1 {
     font-size: 1.8rem;
+  }
+}
+
+@keyframes animate {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(405deg);
+  }
+}
+
+@keyframes unanimate {
+  from{
+    transform: rotate(405deg);
+  }
+  to{
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes dropdown {
+  from{
+    transform: translateX(-100rem);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0rem);
+    opacity: 100;
+  }
+}
+
+@keyframes dropup {
+  from{
+    transform: translateX(0rem);
+    opacity: 100;
+  }
+  to{
+    transform: translateX(-100rem);
+    opacity: 0;
   }
 }
