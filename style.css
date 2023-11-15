@@ -166,49 +166,50 @@ nav {
   transition: 0.4s ease-in-out;
 }
 
-#skills div:hover{
+#skills div:hover {
   transform: scale(1.2);
 }
 
-#skills div img{
+#skills div img {
   width: 6rem;
   height: auto;
   margin-bottom: 1rem;
 }
 
-#skills div p{
+#skills div p {
   color: rgb(140, 140, 247);
   font-weight: bold;
   font-size: 1.6rem;
   margin: 0;
 }
 
-#hskills{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
+#hskills {
   padding: 2rem 6rem;
 }
 
-#hskills div{
-  padding: 0.6rem;
-  margin: 1rem 0;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-  display: flex;
-  align-items: center;
-  transition: 0.4s ease-in-out;
-  max-width: 300px;
-}
-
-#hskills div:hover{
-  transform: scale(1.1);
-}
-#hskills div h1{
+#hskills div h1 {
+  padding: 1rem 4rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   font-size: 1.2rem;
   text-align: start;
   color: rgb(140, 140, 247);
+}
+
+#return a{
+  color: rgb(95, 5, 180);
+  border: none;
+  font-size: 2rem;
+  transform: rotate(270deg);
+  padding: 1rem;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 10px;
+  background-color: rgb(59, 59, 240);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media all and (max-width: 1000px) {
@@ -247,14 +248,15 @@ nav {
   #skills {
     padding: 0 3rem;
   }
+
 }
 
 @media all and (max-width: 700px) {
-  nav{
+  nav {
     display: block;
   }
 
-  #main{
+  #main {
     padding: 1rem 4rem;
   }
 
@@ -280,43 +282,57 @@ nav {
   #about_me h1 {
     font-size: 1.8rem;
   }
+
+  #my_skills{
+    padding: 1rem;
+    text-align: center;
+  }
+
+  #hskills div h1 {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+    text-align: start;
+    color: rgb(140, 140, 247);
+  }
 }
 
 @keyframes animate {
-  from{
+  from {
     transform: rotate(0deg);
   }
-  to{
+  to {
     transform: rotate(405deg);
   }
 }
 
 @keyframes unanimate {
-  from{
+  from {
     transform: rotate(405deg);
   }
-  to{
+  to {
     transform: rotate(0deg);
   }
 }
 
 @keyframes dropdown {
-  from{
+  from {
     transform: translateX(-100rem);
     opacity: 0;
   }
-  to{
+  to {
     transform: translateX(0rem);
     opacity: 100;
   }
 }
 
 @keyframes dropup {
-  from{
+  from {
     transform: translateX(0rem);
     opacity: 100;
   }
-  to{
+  to {
     transform: translateX(-100rem);
     opacity: 0;
   }

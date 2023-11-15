@@ -9,6 +9,11 @@ const navBar = () =>{
       navButton.firstElementChild.innerHTML = "+";
       links.style.animation = "dropup 0.8s ease-in-out forwards";
    }
+
+   setTimeout(() =>{
+      navButton.firstElementChild.innerHTML = "+";
+      links.style.animation = "dropup 0.8s ease-in-out forwards";
+   }, 5000);
 };
 
 navButton.addEventListener("click", navBar);
