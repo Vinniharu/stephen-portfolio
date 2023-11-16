@@ -9,7 +9,7 @@
    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<body id="topPage">
+<body id="topPage" onscroll="goToTopAnimation()">
    <header>
       <nav>
          <div id="nav-logo">
@@ -32,7 +32,8 @@
             React Developer
          </p>
       </div>
-      <div id="intro_image" data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="200">
+      <div id="intro_image" data-aos="fade-right" data-aos-duration="800" data-aos-once="true"
+         data-aos-easing="ease-in-out" data-aos-delay="200">
          <div class="blob-container">
             <div class="blob"></div>
             <div class="image">
@@ -44,19 +45,19 @@
    <img id="svgWave" src="wavesOpacity (1).svg" alt="waves">
    <div id="about_me">
       <h1 data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out">About Me</h1>
-      <div id="about_me_content" data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out">
+      <div id="about_me_content" data-aos="fade-right" data-aos-duration="800" data-aos-once="true"
+         data-aos-easing="ease-in-out">
          <img src="profile.jpg" alt="image" width="300px" id="profile_img">
          <div>
             <p>
-               My name is Stephen Fagbelu. I am Nigerian currently studying Comuter Science at Caleb University. I was
-               born on the 11th of January, 2004. I am a perfectionist of some sort and I always give the best result
+               My name is Stephen Fagbelu. I am Nigerian currently studying Comuter Science at Caleb University. I am a
+               perfectionist of some sort and I always give the best result
                posible when it comes to a project. I am a very friendly according to my peers and i find it very easy to
                work with multiple people in a team.
             </p>
             <br>
             <p>
-               Aside developing websites and problem solving, I also enjoy reading, music and playing chess. Tech has
-               always been a big part of my life and from a very young age, I made up my mind to involve myself in tech
+               Tech has always been a big part of my life and from a very young age, I made up my mind to involve myself in tech
                as a choice of work which infuluenced my choice to study computer science.
             </p>
             <br>
@@ -74,35 +75,43 @@
       <h1>My Skills</h1>
       <p>Technical skills</p>
       <div id="skills">
-         <div data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="1000">
+         <div data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out"
+            data-aos-delay="1000">
             <img src="html.png" alt="HTML">
             <p>HTML</p>
          </div>
-         <div data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="2000">
+         <div data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out"
+            data-aos-delay="2000">
             <img src="css.png" alt="CSS">
             <p>CSS</p>
          </div>
-         <div data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="3000">
+         <div data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out"
+            data-aos-delay="3000">
             <img src="js.png" alt="js">
             <p>JavaScript</p>
          </div>
-         <div data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="4000">
+         <div data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out"
+            data-aos-delay="4000">
             <img src="react.png" alt="react">
             <p>React Js</p>
          </div>
-         <div data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="5000">
+         <div data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out"
+            data-aos-delay="5000">
             <img src="tail.png" alt="tailwind">
             <p>Tailwind CSS</p>
          </div>
-         <div data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="6000">
+         <div data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out"
+            data-aos-delay="6000">
             <img src="git.png" alt="git">
             <p>Git</p>
          </div>
-         <div data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="7000">
+         <div data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out"
+            data-aos-delay="7000">
             <img src="github.png" alt="github">
             <p>GitHub</p>
          </div>
-         <div data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="8000">
+         <div data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out"
+            data-aos-delay="8000">
             <img src="npm.png" alt="npm">
             <p>NPM</p>
          </div>
@@ -110,12 +119,18 @@
       <p>Human skills</p>
       <div id="hskills">
          <div>
-            <h1 data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out">Problem Solving</h1>
-            <h1 data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="200">Communication skills</h1>
-            <h1 data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="400">Team Collaboration</h1>
-            <h1 data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="600">Attention to Detail</h1>
-            <h1 data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="800">Time Mangement</h1>
-            <h1 data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="1000">Continuous Learning</h1>
+            <h1 data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out">Problem
+               Solving</h1>
+            <h1 data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out"
+               data-aos-delay="200">Communication skills</h1>
+            <h1 data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out"
+               data-aos-delay="400">Team Collaboration</h1>
+            <h1 data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out"
+               data-aos-delay="600">Attention to Detail</h1>
+            <h1 data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out"
+               data-aos-delay="800">Time Mangement</h1>
+            <h1 data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out"
+               data-aos-delay="1000">Continuous Learning</h1>
          </div>
       </div>
    </div>
@@ -123,7 +138,8 @@
    <div id="proj_holder">
       <div id="my_projects">
          <h1 class="proj_head">My Projects</h1>
-         <div class="holder" data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out">
+         <div class="holder" data-aos="fade-right" data-aos-duration="800" data-aos-once="true"
+            data-aos-easing="ease-in-out">
             <div class="proj_img">
                <img src="upperlink.PNG" alt="upperlink">
             </div>
@@ -146,9 +162,27 @@
          </div>
       </div>
    </div>
+   <img id="svgWave2" src="wvaesOpacity.svg" alt="waves">
    <div id="contact_me">
-
+      <h1>Contact me</h1>
+      <div id="contact_links">
+         <a href="#">
+            <p>Whatsapp</p>
+         </a>
+         <a href="#">
+            <p>LinkedIn</p>
+         </a>
+         <a href="#">
+            <p>GitHub</p>
+         </a>
+         <a href="#">
+            <p>Instagram</p>
+         </a>
+      </div>
    </div>
+   <footer>
+      <p>Feel free to reach me through the means above</p>
+   </footer>
 
    <div id="return">
       <a href="#topPage">
