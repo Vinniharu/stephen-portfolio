@@ -6,40 +6,45 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Stephen's Portfolio</title>
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<body>
+<body id="topPage">
    <header>
       <nav>
          <div id="nav-logo">
             <h1>Stephen</h1>
-            <div id="button" name="close">
-               <p>+</p>
-            </div>
+            <ion-icon id="button" name="menu-outline"></ion-icon>
          </div>
          <div id="links">
-            <a href="#about_me">About me</a>
-            <a href="#my_skills">My skills</a>
-            <a href="#my_projects">My Projects</a>
-            <a href="#contact_me">Contact Me</a>
+            <a href="#about_me" onclick="closeNav()">About me</a>
+            <a href="#my_skills" onclick="closeNav()">My skills</a>
+            <a href="#my_projects" onclick="closeNav()">My Projects</a>
+            <a href="#contact_me" onclick="closeNav()">Contact Me</a>
          </div>
       </nav>
    </header>
    <div id="main">
-      <div id="intro">
+      <div id="intro" data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out">
          <h1>Hello, My name is <span class="name">Stephen</span></h1>
          <p>
             Front-End Developer<br>
             React Developer
          </p>
       </div>
-      <div id="intro_image">
-         <div></div>
+      <div id="intro_image" data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="200">
+         <div class="blob-container">
+            <div class="blob"></div>
+            <div class="image">
+               <img src="profile.jpg" alt="my Image">
+            </div>
+         </div>
       </div>
    </div>
+   <img id="svgWave" src="wavesOpacity (1).svg" alt="waves">
    <div id="about_me">
-      <h1>About Me</h1>
-      <div id="about_me_content">
+      <h1 data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out">About Me</h1>
+      <div id="about_me_content" data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out">
          <img src="profile.jpg" alt="image" width="300px" id="profile_img">
          <div>
             <p>
@@ -64,39 +69,40 @@
          </div>
       </div>
    </div>
+   <img id="svgWave2" src="wvaesOpacity.svg" alt="waves">
    <div id="my_skills">
       <h1>My Skills</h1>
       <p>Technical skills</p>
       <div id="skills">
-         <div>
+         <div data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="1000">
             <img src="html.png" alt="HTML">
             <p>HTML</p>
          </div>
-         <div>
+         <div data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="2000">
             <img src="css.png" alt="CSS">
             <p>CSS</p>
          </div>
-         <div>
+         <div data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="3000">
             <img src="js.png" alt="js">
             <p>JavaScript</p>
          </div>
-         <div>
+         <div data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="4000">
             <img src="react.png" alt="react">
             <p>React Js</p>
          </div>
-         <div>
+         <div data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="5000">
             <img src="tail.png" alt="tailwind">
             <p>Tailwind CSS</p>
          </div>
-         <div>
+         <div data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="6000">
             <img src="git.png" alt="git">
             <p>Git</p>
          </div>
-         <div>
+         <div data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="7000">
             <img src="github.png" alt="github">
             <p>GitHub</p>
          </div>
-         <div>
+         <div data-aos="fade-down" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="8000">
             <img src="npm.png" alt="npm">
             <p>NPM</p>
          </div>
@@ -104,47 +110,58 @@
       <p>Human skills</p>
       <div id="hskills">
          <div>
-            <h1>Problem Solving</h1>
-            <h1>Communication skills</h1>
-            <h1>Team Collaboration</h1>
-            <h1>Attention to Detail</h1>
-            <h1>Time Mangement</h1>
-            <h1>Continuous Learning</h1>
+            <h1 data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out">Problem Solving</h1>
+            <h1 data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="200">Communication skills</h1>
+            <h1 data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="400">Team Collaboration</h1>
+            <h1 data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="600">Attention to Detail</h1>
+            <h1 data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="800">Time Mangement</h1>
+            <h1 data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-delay="1000">Continuous Learning</h1>
          </div>
       </div>
    </div>
-
-   <div id="my_projects">
-      <h1>My Projects</h1>
-      <div class="holder">
-         <div>
-            <img src="html.png" alt="upperlink">
-         </div>
-         <div>
-            <h1>Upperlink Site</h1>
-            <p>
-               This is a replica of the landing page of the upperlink website. This is a fully responsive site with a functional navbar with some mini animations on scroll and background moving animations.
-            </p>
-            <div class="imgs">
-               <img src="html.png" alt="html">
-               <img src="tail.png" alt="tailwind">
-               <img src="js.png" alt="javascript">
+   <img id="svgWave1" src="wavesOpacity (1).svg" alt="waves">
+   <div id="proj_holder">
+      <div id="my_projects">
+         <h1 class="proj_head">My Projects</h1>
+         <div class="holder" data-aos="fade-right" data-aos-duration="800" data-aos-once="true" data-aos-easing="ease-in-out">
+            <div class="proj_img">
+               <img src="upperlink.PNG" alt="upperlink">
             </div>
-            <div class="proj_link">
-               <a href="#">View Code</a>
-               <a href="#">Live View</a>
+            <div>
+               <h1>Upperlink Site</h1>
+               <p>
+                  This is a replica of the landing page of the upperlink website. This is a fully responsive site with a
+                  functional navbar with some mini animations on scroll and background moving animations.
+               </p>
+               <div class="imgs">
+                  <img src="html.png" alt="html">
+                  <img src="tail.png" alt="tailwind">
+                  <img src="js.png" alt="javascript">
+               </div>
+               <div class="proj_link">
+                  <a href="#" target="_blank">View Code</a>
+                  <a href="https://vinny-upperlink.netlify.app" target="_blank">Live View</a>
+               </div>
             </div>
          </div>
       </div>
    </div>
+   <div id="contact_me">
 
+   </div>
 
    <div id="return">
-      <a href="#nav-logo">
-         >
+      <a href="#topPage">
+         <ion-icon name="arrow-up-outline"></ion-icon>
       </a>
    </div>
    <script src="script.js"></script>
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+      AOS.init();
+   </script>
 </body>
 
 </html>

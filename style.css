@@ -71,6 +71,14 @@ nav {
   flex: 1;
 }
 
+#svgWave {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  transform: rotate(180deg);
+  margin-bottom: -10px;
+}
+
 #intro h1 {
   font-size: 2.8rem;
   margin-bottom: 2rem;
@@ -93,22 +101,46 @@ nav {
   align-items: center;
 }
 
-#intro_image div {
+.blob-container {
+  position: relative;
   margin: auto;
-  border-radius: 50%;
   width: 300px;
   height: 300px;
-  background-image: url(profile.jpg);
-  background-position: 0 -180px;
-  background-size: cover;
-  background-repeat: no-repeat;
+  overflow: hidden;
+  border-radius: 50%;
+  animation: blobAnimation 3s infinite alternate;
+}
+
+.blob {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(140, 140, 247);
+  border-radius: 50%;
+  clip-path: ellipse(80% 70% at 90% 80%);
+}
+
+.image {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #about_me {
   background-color: rgb(140, 140, 247);
   padding: 3rem;
   color: white;
-  margin-bottom: 8rem;
+  padding-bottom: 8rem;
 }
 
 #about_me h1 {
@@ -122,6 +154,14 @@ nav {
   align-items: start;
   gap: 4rem;
   font-size: 1.2rem;
+}
+
+#svgWave2 {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  transform: rotate(180deg);
+  background-color: rgb(140, 140, 247);
 }
 
 #my_skills {
@@ -197,38 +237,46 @@ nav {
   color: rgb(140, 140, 247);
 }
 
-#return a {
-  color: rgb(95, 5, 180);
-  border: none;
-  font-size: 2rem;
-  transform: rotate(270deg);
+.proj_img {
   padding: 1rem;
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  border-radius: 10px;
-  background-color: rgb(59, 59, 240);
-  display: inline-flex;
-  justify-content: center;
+  display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.proj_img img {
+  max-width: 100%;
+  height: 100%;
+}
+
+#proj_holder {
+  background-color: rgb(140, 140, 247);
+}
+
+#svgWave1 {
+  width: 100%;
+  height: 50px;
+  transform: rotate(180deg);
+  margin-bottom: -3px;
 }
 
 #my_projects {
-  padding: 1rem 4rem;
+  padding: 2rem 4rem;
   text-align: center;
-  background-color: rgb(50, 50, 233);
+  background-color: rgb(140, 140, 247);
 }
 
-#my_projects h1 {
+.proj_head {
   font-size: 2rem;
   color: white;
-  margin: 3rem;
+  margin: 3rem 0;
 }
 
 .holder {
-  padding: 2rem;
   border-radius: 10px;
   display: flex;
+  padding: 1rem;
+  gap: 2rem;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
@@ -241,8 +289,13 @@ nav {
   flex: 1;
 }
 
+.holder div h1 {
+  font-size: 2rem;
+  color: white;
+}
+
 #my_projects div p {
-  color: rgb(140, 140, 247);
+  color: rgb(50, 50, 233);
   font-size: 1.2rem;
   font-weight: 600;
 }
@@ -277,6 +330,22 @@ nav {
 .proj_link a:hover {
   background-color: white;
   color: blue;
+}
+
+#return a {
+  color: rgb(140, 140, 247);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  border: none;
+  font-size: 2rem;
+  padding: 1rem;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media all and (max-width: 1000px) {
@@ -377,7 +446,6 @@ nav {
   .holder div {
     flex: auto;
   }
-
 }
 
 @keyframes animate {
@@ -417,5 +485,16 @@ nav {
   to {
     transform: translateX(-100rem);
     opacity: 0;
+  }
+}
+
+@keyframes blobAnimation {
+  0% {
+    transform: scale(1);
+    clip-path: ellipse(50% 50% at 50% 50%);
+  }
+  100% {
+    transform: scale(1.1);
+    clip-path: ellipse(50% 50% at 50% 50%);
   }
 }
