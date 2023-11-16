@@ -430,6 +430,14 @@ nav {
     text-align: center;
   }
 
+  #skills{
+    padding: 1rem;
+  }
+
+  #hskills{
+    padding: 1rem 0;
+  }
+
   #hskills div h1 {
     padding: 0.5rem 1rem;
     border-radius: 10px;
@@ -440,7 +448,7 @@ nav {
   }
 
   #my_projects {
-    padding: 0.5rem 1rem;
+    padding: 2rem 1rem;
   }
 
   .holder div {
