@@ -6,7 +6,8 @@
   outline: none;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: Montserrat, Tahoma, sans-serif;
+  /* font-family: Montserrat, ; */
+  font-family: Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -62,7 +63,7 @@ nav {
 #main {
   padding: 4rem 10rem;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 4rem;
   flex-wrap: wrap;
   margin-bottom: 8rem;
