@@ -11,12 +11,16 @@
 }
 
 header {
-  background-color: transparent;
+  background-color: white;
+  position: sticky;
+  top: 0;
   padding: 1rem 3rem;
+  z-index: 2;
 }
 
 nav {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-between;
   color: rgb(50, 50, 233);
@@ -26,7 +30,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 2;
 }
 
 #nav-logo h1 {
@@ -66,6 +69,7 @@ nav {
   gap: 4rem;
   flex-wrap: wrap;
   margin-bottom: 8rem;
+  z-index: -1;
 }
 
 #intro {
@@ -438,7 +442,7 @@ footer {
   }
 
   #main {
-    padding: 4rem;
+    padding: 2rem;
   }
 
   #profile_img {
@@ -467,20 +471,20 @@ footer {
   }
 
   #main {
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
   }
 
   #links {
     display: flex;
-    z-index: X;
+    z-index: 2;
     position: absolute;
     flex-direction: column;
     align-items: start;
-    margin-top: 2rem;
+    margin-top: 1rem;
     width: 100%;
     left: 0;
     overflow: hidden;
-    padding: 0 3rem 3rem;
+    padding: 1rem 3rem 3rem;
     animation: dropup 0.8s ease-in-out forwards;
     background-color: white;
   }

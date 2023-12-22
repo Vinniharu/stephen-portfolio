@@ -38,9 +38,9 @@ function typeMessage() {
     if (charIndex < currentMessage.length) {
       textElement.textContent += currentMessage.charAt(charIndex);
       charIndex++;
-      setTimeout(typeChar, 100); // Adjust typing speed here (in milliseconds)
+      setTimeout(typeChar, 100); 
     } else {
-      setTimeout(eraseMessage, 1000); // Delay before erasing
+      setTimeout(eraseMessage, 1000); 
     }
   }
 
@@ -55,10 +55,10 @@ function eraseMessage() {
     if (charIndex > 0) {
       textElement.textContent = currentMessage.substring(0, charIndex - 1);
       charIndex--;
-      setTimeout(eraseChar, 50); // Adjust erasing speed here (in milliseconds)
+      setTimeout(eraseChar, 50); 
     } else {
       messageIndex = (messageIndex + 1) % messages.length;
-      setTimeout(typeMessage, 500); // Delay before typing the next message
+      setTimeout(typeMessage, 500); 
     }
   }
 
